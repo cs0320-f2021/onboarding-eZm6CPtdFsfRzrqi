@@ -67,13 +67,12 @@ public final class Main {
         try {
           input = input.trim();
           String[] arguments = input.split(" ");
-          // TODO: complete your REPL by adding commands for addition "add" and subtraction
-          //  "subtract"
-          MathBot mathBot = new MathBot();
-          if (arguments[0].equals("add")){
-            System.out.println(mathBot.add(Double.valueOf(arguments[1]), Double.valueOf(arguments[2])));
-          } else if (arguments[0].equals("subtract")){
-            System.out.println(mathBot.subtract(Double.valueOf(arguments[1]), Double.valueOf(arguments[2])));
+
+          if (arguments[0].equals("stars")){
+            System.out.println("stars");
+
+          } else if (arguments[0].equals("naive-neighbors")){
+            System.out.println("naive-neighbors");
           }
         } catch (Exception e) {
           // e.printStackTrace();
